@@ -1,6 +1,7 @@
 unique_name: world_wide_importers
 object_type: model
 label: World Wide Importers
+description: World Wide Importers is model that's based on a sample relational database that represents a fictional wholesale import and distribution company. It models end-to-end business operations such as sales, purchasing, warehousing, and invoicing, and is commonly used for demos, training, and testing transactional and analytical workloads.
 include_default_drillthrough: true
 metrics:
   - unique_name: Last Stocktake Quantity
