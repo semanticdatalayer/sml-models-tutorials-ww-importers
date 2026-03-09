@@ -2,6 +2,6 @@ unique_name: sml-ww-importers
 object_type: catalog
 label: World Wide Importers
 description: World Wide Importers is catalog that contains the World Wide Importers model that's based on a sample relational database that represents a fictional wholesale import and distribution company. It models end-to-end business operations such as sales, purchasing, warehousing, and invoicing, and is commonly used for demos, training, and testing transactional and analytical workloads.
-version: 1.0
+version: 1.6
 aggressive_agg_promotion: false
 build_speculative_aggs: false
