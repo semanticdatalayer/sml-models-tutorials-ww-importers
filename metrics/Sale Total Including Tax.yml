@@ -1,6 +1,7 @@
 unique_name: Sale Total Including Tax
 object_type: metric
 label: Sale Total Including Tax
+description: "Gross sales revenue in dollars including tax. Contrast Sale Total Excluding Tax (pre-tax)."
 calculation_method: sum
 format: "$#,##0;($#,##0)"
 dataset: fact_sale

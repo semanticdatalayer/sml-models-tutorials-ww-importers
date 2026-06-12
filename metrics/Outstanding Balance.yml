@@ -1,6 +1,7 @@
 unique_name: Outstanding Balance
 object_type: metric
 label: Outstanding Balance
+description: "Unpaid / remaining balance in dollars on customer and supplier transactions (receivables and payables). From the transaction fact."
 calculation_method: sum
 format: "$#,##0;($#,##0)"
 dataset: fact_transaction

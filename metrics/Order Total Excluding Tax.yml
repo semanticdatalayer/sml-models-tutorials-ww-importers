@@ -1,6 +1,7 @@
 unique_name: Order Total Excluding Tax
 object_type: metric
 label: Order Total Excluding Tax
+description: "Order value in dollars before tax. From the order fact; contrast Sale Total Excluding Tax (invoiced)."
 calculation_method: sum
 format: "$#,##0;($#,##0)"
 dataset: fact_order

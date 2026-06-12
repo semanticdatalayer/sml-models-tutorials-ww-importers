@@ -1,6 +1,7 @@
 unique_name: Ordered Outers
 object_type: metric
 label: Ordered Outers
+description: "Number of outer packages / cartons ordered from suppliers. Purchasing measure; contrast Received Outers and Purchase Ordered Quantity (units)."
 calculation_method: sum
 format: "#,##0"
 dataset: fact_purchase

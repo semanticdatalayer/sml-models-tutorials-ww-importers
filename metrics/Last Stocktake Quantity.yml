@@ -1,6 +1,7 @@
 unique_name: Last Stocktake Quantity
 object_type: metric
 label: Last Stocktake Quantity
+description: "Units counted at the most recent stocktake / physical inventory count per stock holding. Contrast Stock Quantity On Hand (current level)."
 calculation_method: sum
 format: "#,##0"
 dataset: fact_stockholding

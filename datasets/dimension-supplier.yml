@@ -1,6 +1,7 @@
 unique_name: supplier_dataset
 object_type: dataset
 label: supplier_dataset
+description: "WWI supplier master: name, category, primary contact, reference, payment days, and postal code."
 connection_id: Connection - WW
 table: supplier_dataset
 

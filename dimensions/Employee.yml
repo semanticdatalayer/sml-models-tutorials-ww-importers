@@ -1,6 +1,7 @@
 unique_name: Employee
 object_type: dimension
 label: Employee
+description: "Employee / staff dimension with salesperson flag and preferred name. Role-played as Order Salesperson, Order Picker, and Sale Salesperson."
 type: standard
 
 hierarchies:
@@ -8,6 +9,7 @@ hierarchies:
   - unique_name: Employee
     label: Employee
     folder: Employees
+    description: "Single-level grouping by employee; carries salesperson flag and preferred name attributes."
     filter_empty: "yes"
 
     levels:
@@ -18,6 +20,7 @@ hierarchies:
 
           - unique_name: Is Salesperson
             label: Is Salesperson
+            description: "Whether the employee is a salesperson (true/false). Distinguishes salespeople from pickers and other staff."
             folder: Employees
             dataset: dimension-employee
             name_column: is_salesperson
@@ -27,6 +30,7 @@ hierarchies:
 
           - unique_name: Preferred Name
             label: Preferred Name
+            description: "Name the employee prefers to be addressed by (nickname / short name)."
             folder: Employees
             dataset: dimension-employee
             name_column: preferred_name
@@ -39,6 +43,7 @@ level_attributes:
   - unique_name: Employee
     label: Employee
     is_unique_key: true
+    description: "Employee full name (salespeople and warehouse pickers). Role-played as Order Salesperson, Order Picker, and Sale Salesperson."
     dataset: dimension-employee
     name_column: employee
     key_columns:

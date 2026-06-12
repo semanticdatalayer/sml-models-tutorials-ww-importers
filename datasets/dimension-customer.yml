@@ -1,6 +1,7 @@
 unique_name: dimension-customer
 object_type: dataset
 label: customer
+description: "WWI customer master: customer and bill-to names, category, buying group, primary contact, and postal code (SCD valid from/to)."
 connection_id: Connection - WW
 table: customer
 

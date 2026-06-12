@@ -1,6 +1,7 @@
 unique_name: Profit
 object_type: metric
 label: Profit
+description: "Profit / margin dollars earned on sale lines. Numerator of Percent Profit; from the sale fact."
 calculation_method: sum
 format: "$#,##0;($#,##0)"
 dataset: fact_sale

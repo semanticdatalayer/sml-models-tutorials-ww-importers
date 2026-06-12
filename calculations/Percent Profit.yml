@@ -1,5 +1,6 @@
 unique_name: Percent Profit
 object_type: metric_calc
 label: Percent Profit
+description: "Profit margin percent: Profit divided by Sale Total Excluding Tax (profit as a share of pre-tax sales revenue). Ratio, not profit dollars."
 expression: "[Measures].[Profit] / [Measures].[Sale Total Excluding Tax]"
 format: percent

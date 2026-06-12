@@ -1,6 +1,7 @@
 unique_name: fact_stockholding
 object_type: dataset
 label: fact_stockholding
+description: "WWI stock holding snapshot per stock item: quantity on hand, bin location, last stocktake quantity, last cost, reorder and target levels."
 connection_id: Connection - WW
 table: fact_stockholding
 

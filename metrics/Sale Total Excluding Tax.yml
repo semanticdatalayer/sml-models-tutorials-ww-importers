@@ -1,6 +1,7 @@
 unique_name: Sale Total Excluding Tax
 object_type: metric
 label: Sale Total Excluding Tax
+description: "Sales revenue / net sales in dollars before tax. From the sale fact; contrast Sale Total Including Tax and Order Total Excluding Tax."
 calculation_method: sum
 format: "$#,##0;($#,##0)"
 dataset: fact_sale

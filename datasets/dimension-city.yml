@@ -1,6 +1,7 @@
 unique_name: city
 object_type: dataset
 label: city
+description: "WWI geography lookup at city grain: city, state province, country, continent, region, subregion, and sales territory."
 connection_id: Connection - WW
 table: city
 

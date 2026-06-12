@@ -1,6 +1,7 @@
 unique_name: transactiontype
 object_type: dataset
 label: transactiontype
+description: "WWI transaction type lookup (e.g. Invoice, Payment, Stock Adjustment)."
 connection_id: Connection - WW
 table: transactiontype
 

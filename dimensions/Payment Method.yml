@@ -1,6 +1,7 @@
 unique_name: Payment Method
 object_type: dimension
 label: Payment Method
+description: "Payment method lookup (e.g. Cash, Check, EFT) for financial transactions. Used via the Transaction role."
 type: standard
 
 hierarchies:
@@ -8,6 +9,7 @@ hierarchies:
   - unique_name: Payment Method
     label: Payment Method
     folder: Transactions
+    description: "Single-level grouping by payment method (e.g. Cash, Check, EFT)."
     filter_empty: "yes"
 
     levels:
@@ -19,6 +21,7 @@ level_attributes:
   - unique_name: Payment Method
     label: Payment Method
     is_unique_key: true
+    description: "Payment method name (e.g. Cash, Check, EFT). Attribute of financial transactions."
     dataset: paymentmethod
     name_column: payment_method
     key_columns:

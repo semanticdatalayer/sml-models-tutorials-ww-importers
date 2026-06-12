@@ -1,6 +1,7 @@
 unique_name: Sale Quantity
 object_type: metric
 label: Sale Quantity
+description: "Units sold / sales volume per sale line. From the sale (invoice) fact; contrast Order Quantity (ordered, not yet invoiced)."
 calculation_method: sum
 format: "#,##0"
 dataset: fact_sale

@@ -1,6 +1,7 @@
 unique_name: Movement Quantity
 object_type: metric
 label: Movement Quantity
+description: "Stock / inventory movement quantity: units moving in and out of the warehouse. From the movement fact; not a sales or purchase quantity."
 calculation_method: sum
 format: "#,##0"
 dataset: fact_movement
