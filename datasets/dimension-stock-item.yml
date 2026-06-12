@@ -1,6 +1,7 @@
 unique_name: stockitem
 object_type: dataset
 label: stockitem
+description: "WWI stock item master: name, brand, color, size, packaging, chiller flag, tax rate, unit and recommended retail prices."
 connection_id: Connection - WW
 table: stockitem
 

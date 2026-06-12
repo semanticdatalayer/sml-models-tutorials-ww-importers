@@ -1,6 +1,7 @@
 unique_name: Transaction Tax Amount
 object_type: metric
 label: Transaction Tax Amount
+description: "Tax dollars on financial transactions (invoices, payments). Contrast Sale Tax Amount and Order Tax Amount."
 calculation_method: sum
 format: "$#,##0;($#,##0)"
 dataset: fact_transaction

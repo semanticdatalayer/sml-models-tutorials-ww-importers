@@ -1,6 +1,7 @@
 unique_name: Supplier
 object_type: dimension
 label: Supplier
+description: "Supplier / vendor dimension: category, payment days, contact, and reference. Role-played as Purchase, Movement, and Transaction supplier; contrast Customer."
 type: standard
 
 hierarchies:
@@ -8,6 +9,7 @@ hierarchies:
   - unique_name: Supplier
     label: Supplier
     folder: Suppliers
+    description: "Single-level grouping by supplier; carries category, payment days, and contact attributes."
     filter_empty: "yes"
 
     levels:
@@ -18,6 +20,7 @@ hierarchies:
 
           - unique_name: Supplier Category
             label: Supplier Category
+            description: "Supplier category / segment (e.g. Toy Supplier, Packaging Supplier). Groups suppliers; contrast Customer Category."
             folder: Suppliers
             dataset: supplier_dataset
             name_column: category
@@ -27,6 +30,7 @@ hierarchies:
 
           - unique_name: Payment Days
             label: Payment Days
+            description: "Payment terms in days agreed with the supplier (e.g. 7, 14, 30)."
             folder: Suppliers
             dataset: supplier_dataset
             name_column: payment_days
@@ -36,6 +40,7 @@ hierarchies:
 
           - unique_name: Supplier Postal Code
             label: Supplier Postal Code
+            description: "Supplier zip / postal code. Supplier location; contrast Customer Postal Code."
             folder: Suppliers
             dataset: supplier_dataset
             name_column: postal_code
@@ -45,6 +50,7 @@ hierarchies:
 
           - unique_name: Supplier Primary Contact
             label: Supplier Primary Contact
+            description: "Primary contact person for the supplier. Contrast Customer Primary Contact."
             folder: Suppliers
             dataset: supplier_dataset
             name_column: primary_contact
@@ -54,6 +60,7 @@ hierarchies:
 
           - unique_name: Supplier Reference
             label: Supplier Reference
+            description: "Account reference code used with the supplier."
             folder: Suppliers
             dataset: supplier_dataset
             name_column: supplier_reference
@@ -66,6 +73,7 @@ level_attributes:
   - unique_name: Supplier
     label: Supplier
     is_unique_key: true
+    description: "Supplier / vendor name (e.g. Litware, Fabrikam). Role-played as Purchase, Movement, and Transaction supplier; contrast Customer Name."
     dataset: supplier_dataset
     name_column: supplier_dataset
     key_columns:

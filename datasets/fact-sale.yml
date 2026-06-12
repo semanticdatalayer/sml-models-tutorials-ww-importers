@@ -1,6 +1,7 @@
 unique_name: fact_sale
 object_type: dataset
 label: fact_sale
+description: "WWI sale / invoice fact at invoice line grain: quantity, unit price, tax, totals, profit, dry and chiller item counts, invoice and delivery dates."
 connection_id: Connection - WW
 table: fact_sale
 

@@ -1,6 +1,7 @@
 unique_name: Transaction Total Excluding Tax
 object_type: metric
 label: Transaction Total Excluding Tax
+description: "Financial transaction amount in dollars before tax, across customer and supplier transactions. Contrast Transaction Total Including Tax."
 calculation_method: sum
 format: "$#,##0;($#,##0)"
 dataset: fact_transaction

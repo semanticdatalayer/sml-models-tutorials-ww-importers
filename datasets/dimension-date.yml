@@ -1,6 +1,7 @@
 unique_name: dimension-date
 object_type: dataset
 label: date
+description: "WWI date dimension at day grain with Gregorian calendar and fiscal calendar labels plus ISO week number."
 connection_id: Connection - WW
 table: date
 

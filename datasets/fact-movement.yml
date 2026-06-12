@@ -1,6 +1,7 @@
 unique_name: fact_movement
 object_type: dataset
 label: fact_movement
+description: "WWI stock movement fact: inventory in/out quantities by date, stock item, customer, supplier, and transaction type."
 connection_id: Connection - WW
 table: fact_movement
 

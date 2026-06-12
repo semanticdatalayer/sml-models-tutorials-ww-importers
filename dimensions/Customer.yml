@@ -1,6 +1,7 @@
 unique_name: Customer
 object_type: dimension
 label: Customer
+description: "Customer / buyer dimension: customer name with category, postal code, and primary contact attributes. Role-played as Sale, Order, Movement, Transaction, and Bill-to customer; contrast Supplier."
 type: standard
 
 hierarchies:
@@ -8,6 +9,7 @@ hierarchies:
   - unique_name: Customer
     label: Customer
     folder: Customers
+    description: "Single-level grouping by customer name; carries category, postal code, and primary contact attributes."
     filter_empty: "yes"
 
     levels:
@@ -18,6 +20,7 @@ hierarchies:
 
           - unique_name: Customer Category
             label: Customer Category
+            description: "Customer category / segment (e.g. Novelty Shop, Supermarket). Groups customers; contrast Supplier Category."
             folder: Customers
             dataset: dimension-customer
             name_column: category
@@ -27,6 +30,7 @@ hierarchies:
 
           - unique_name: Customer Postal Code
             label: Customer Postal Code
+            description: "Customer zip / postal code. Customer location; contrast Supplier Postal Code."
             folder: Customers
             dataset: dimension-customer
             name_column: postal_code
@@ -36,6 +40,7 @@ hierarchies:
 
           - unique_name: Customer Primary Contact
             label: Customer Primary Contact
+            description: "Primary contact person for the customer. Contrast Supplier Primary Contact."
             folder: Customers
             dataset: dimension-customer
             name_column: primary_contact
@@ -47,6 +52,7 @@ level_attributes:
 
   - unique_name: Customer
     label: Customer Name
+    description: "Customer / account / buyer name (e.g. Tailspin Toys). Role-played as Sale, Order, Movement, Transaction, and Bill-to customer; contrast Supplier."
     is_unique_key: true
     dataset: dimension-customer
     name_column: customer

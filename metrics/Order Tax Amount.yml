@@ -1,6 +1,7 @@
 unique_name: Order Tax Amount
 object_type: metric
 label: Order Tax Amount
+description: "Tax dollars on order lines. From the order fact; contrast Sale Tax Amount (invoiced)."
 calculation_method: sum
 format: "$#,##0;($#,##0)"
 dataset: fact_order

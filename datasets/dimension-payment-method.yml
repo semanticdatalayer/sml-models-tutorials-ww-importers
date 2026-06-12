@@ -1,6 +1,7 @@
 unique_name: paymentmethod
 object_type: dataset
 label: paymentmethod
+description: "WWI payment method lookup (e.g. Cash, Check, EFT)."
 connection_id: Connection - WW
 table: paymentmethod
 

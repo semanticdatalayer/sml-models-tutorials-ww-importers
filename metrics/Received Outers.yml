@@ -1,6 +1,7 @@
 unique_name: Received Outers
 object_type: metric
 label: Received Outers
+description: "Number of outer packages / cartons received from suppliers. Contrast Ordered Outers (ordered, not yet received)."
 calculation_method: sum
 format: "#,##0"
 dataset: fact_purchase

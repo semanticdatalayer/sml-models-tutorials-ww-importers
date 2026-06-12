@@ -1,6 +1,7 @@
 unique_name: Order Quantity
 object_type: metric
 label: Order Quantity
+description: "Units ordered / demand volume per order line. From the order fact; contrast Sale Quantity (invoiced sales)."
 calculation_method: sum
 format: "#,##0"
 dataset: fact_order

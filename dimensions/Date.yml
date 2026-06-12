@@ -8,6 +8,7 @@ hierarchies:
 
   - unique_name: Date
     label: Calendar Date
+    description: "Standard Gregorian calendar rollup Calendar Year > Month > Day. Role-played per date role (Order, Order Picked, Sale Invoice, Sale Delivery, Purchase, Movement, Transaction). Contrast Fiscal Date."
     folder: Calendar Dates
     filter_empty: "yes"
 
@@ -21,6 +22,7 @@ hierarchies:
 
   - unique_name: Fiscal Date
     label: Fiscal Date
+    description: "Fiscal calendar rollup Fiscal Year > Month > Day. Role-played per date role. Contrast Calendar Date (Gregorian)."
     folder: Fiscal Dates
     filter_empty: "yes"
 
@@ -46,6 +48,7 @@ level_attributes:
 
   - unique_name: Calendar Month
     label: Calendar Month
+    description: "Calendar month (e.g. January 2016), Gregorian calendar. Role-played per date role (Order, Sale Invoice, etc.). Not the Fiscal Month."
     dataset: dimension-date
     name_column: calendar_month_label
     key_columns:
@@ -54,6 +57,7 @@ level_attributes:
 
   - unique_name: Calendar Year 
     label: Calendar Year
+    description: "Calendar year (e.g. 2016), Gregorian calendar. Role-played per date role. Not the Fiscal Year."
     dataset: dimension-date
     name_column: calendar_year_label
     key_columns:
@@ -62,6 +66,7 @@ level_attributes:
 
   - unique_name: Fiscal Day
     label: Fiscal Day
+    description: "Day grain of the fiscal calendar (same dates as Calendar Day). Role-played per date role."
     dataset: dimension-date
     name_column: date
     key_columns:
@@ -70,6 +75,7 @@ level_attributes:
 
   - unique_name: Fiscal Month
     label: Fiscal Month
+    description: "Fiscal month label. Role-played per date role. Not the Gregorian Calendar Month."
     dataset: dimension-date
     name_column: fiscal_month_label
     key_columns:
@@ -78,6 +84,7 @@ level_attributes:
 
   - unique_name: Fiscal Year 
     label: Fiscal Year
+    description: "Fiscal year label. Role-played per date role. Not the Gregorian Calendar Year."
     dataset: dimension-date
     name_column: fiscal_year_label
     key_columns:

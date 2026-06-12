@@ -1,6 +1,7 @@
 unique_name: Purchase Ordered Quantity
 object_type: metric
 label: Purchase Ordered Quantity
+description: "Total units ordered from suppliers on purchase orders. Contrast Ordered Outers (packages, not units)."
 calculation_method: sum
 format: "#,##0"
 dataset: fact_purchase

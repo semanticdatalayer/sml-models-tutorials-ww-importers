@@ -1,6 +1,7 @@
 unique_name: fact_order
 object_type: dataset
 label: fact_order
+description: "WWI order fact at order line grain: quantity, unit price, tax, totals, order and picked dates, salesperson and picker keys."
 connection_id: Connection - WW
 table: fact_order
 

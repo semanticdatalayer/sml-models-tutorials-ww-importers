@@ -1,6 +1,7 @@
 unique_name: Sale Tax Amount
 object_type: metric
 label: Sale Tax Amount
+description: "Tax dollars applied to sales / invoices. From the sale fact; contrast Order Tax Amount and Transaction Tax Amount."
 calculation_method: sum
 format: "$#,##0;($#,##0)"
 dataset: fact_sale

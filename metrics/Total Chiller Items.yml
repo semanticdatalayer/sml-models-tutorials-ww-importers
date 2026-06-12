@@ -1,6 +1,7 @@
 unique_name: Total Chiller Items
 object_type: metric
 label: Total Chiller Items
+description: "Count of chiller / refrigerated items sold. Contrast Total Dry Items (non-refrigerated)."
 calculation_method: sum
 format: "#,##0"
 dataset: fact_sale

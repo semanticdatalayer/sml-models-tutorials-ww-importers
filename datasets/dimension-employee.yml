@@ -1,6 +1,7 @@
 unique_name: dimension-employee
 object_type: dataset
 label: employee
+description: "WWI employee master: name, preferred name, and salesperson flag (SCD valid from/to)."
 connection_id: Connection - WW
 table: employee
 

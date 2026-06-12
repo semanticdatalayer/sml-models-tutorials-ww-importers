@@ -1,6 +1,7 @@
 unique_name: fact_transaction
 object_type: dataset
 label: fact_transaction
+description: "WWI financial transaction fact: customer and supplier transaction amounts, tax, totals, and outstanding balance by payment method and transaction type."
 connection_id: Connection - WW
 table: fact_transaction
 

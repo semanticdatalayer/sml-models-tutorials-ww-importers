@@ -1,6 +1,7 @@
 unique_name: Transaction Type
 object_type: dimension
 label: Transaction Type
+description: "Transaction type lookup (e.g. Invoice, Payment, Stock Adjustment) classifying stock movements and financial transactions."
 type: standard
 
 hierarchies:
@@ -8,6 +9,7 @@ hierarchies:
   - unique_name: Transaction Type
     label: Transaction Type
     folder: Transactions
+    description: "Single-level grouping by transaction type (e.g. Invoice, Payment, Stock Adjustment)."
     filter_empty: "yes"
 
     levels:
@@ -19,6 +21,7 @@ level_attributes:
   - unique_name: Transaction Type
     label: Transaction Type
     is_unique_key: true
+    description: "Transaction type name (e.g. Invoice, Payment, Stock Adjustment)."
     dataset: transactiontype
     name_column: transaction_type
     key_columns:

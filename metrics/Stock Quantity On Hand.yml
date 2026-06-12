@@ -1,6 +1,7 @@
 unique_name: Stock Quantity On Hand
 object_type: metric
 label: Stock Quantity On Hand
+description: "Current inventory / units on hand per stock item. Contrast Last Stocktake Quantity (as of last count)."
 calculation_method: sum
 format: "#,##0"
 dataset: fact_stockholding

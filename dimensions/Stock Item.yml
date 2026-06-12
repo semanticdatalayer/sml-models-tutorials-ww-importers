@@ -1,6 +1,7 @@
 unique_name: Stock Item
 object_type: dimension
 label: Stock Item
+description: "Stock item / product dimension: brand, color, size, packaging, pricing, and chiller flag. Role-played across Sale, Order, Purchase, Movement, and Stock Holding facts."
 type: standard
 
 hierarchies:
@@ -8,6 +9,7 @@ hierarchies:
   - unique_name: Stock Item
     label: Stock Item
     folder: Stock
+    description: "Single-level grouping by stock item; carries brand, color, size, packaging, and pricing attributes."
     filter_empty: "yes"
 
     levels:
@@ -18,6 +20,7 @@ hierarchies:
 
           - unique_name: Bar Code
             label: Bar Code
+            description: "Barcode / EAN of the stock item."
             folder: Stock
             dataset: stockitem
             name_column: barcode
@@ -27,6 +30,7 @@ hierarchies:
 
           - unique_name: Brand
             label: Brand
+            description: "Brand name of the stock item (e.g. Northwind); blank for unbranded items."
             folder: Stock
             dataset: stockitem
             name_column: brand
@@ -36,6 +40,7 @@ hierarchies:
 
           - unique_name: Buying Package
             label: Buying Package
+            description: "Packaging when purchasing from suppliers (e.g. Carton, Each). Contrast Selling Package."
             folder: Stock
             dataset: stockitem
             name_column: buying_package
@@ -45,6 +50,7 @@ hierarchies:
 
           - unique_name: Color
             label: Color
+            description: "Color / colour of the stock item (e.g. Red, Blue, Black)."
             folder: Stock
             dataset: stockitem
             name_column: color
@@ -54,6 +60,7 @@ hierarchies:
 
           - unique_name: Is Chiller Stock
             label: Is Chiller Stock
+            description: "Whether the item requires refrigeration (chiller stock, true/false). Relates to the Total Chiller Items measure."
             folder: Stock
             dataset: stockitem
             name_column: is_chiller_stock
@@ -63,6 +70,7 @@ hierarchies:
 
           - unique_name: Lead Time Days
             label: Lead Time Days
+            description: "Supplier lead time in days to obtain the item."
             folder: Stock
             dataset: stockitem
             name_column: lead_time_days
@@ -72,6 +80,7 @@ hierarchies:
 
           - unique_name: Quantity Per Outer
             label: Quantity Per Outer
+            description: "Units contained in one outer package / carton; converts outers to units."
             folder: Stock
             dataset: stockitem
             name_column: quantity_per_outer
@@ -81,6 +90,7 @@ hierarchies:
 
           - unique_name: Recommended Retail Price
             label: Recommended Retail Price
+            description: "Recommended retail price (RRP / MSRP) of the item in dollars. Contrast Unit Price (actual selling price)."
             folder: Stock
             dataset: stockitem
             name_column: recommended_retail_price
@@ -90,6 +100,7 @@ hierarchies:
 
           - unique_name: Selling Package
             label: Selling Package
+            description: "Packaging when selling to customers (e.g. Each, Pair). Contrast Buying Package."
             folder: Stock
             dataset: stockitem
             name_column: selling_package
@@ -99,6 +110,7 @@ hierarchies:
 
           - unique_name: Size
             label: Size
+            description: "Size specification of the item (e.g. S, M, L, 1/12 scale)."
             folder: Stock
             dataset: stockitem
             name_column: size
@@ -108,6 +120,7 @@ hierarchies:
 
           - unique_name: Tax Rate
             label: Tax Rate
+            description: "Tax rate percentage applicable to the item (e.g. 15)."
             folder: Stock
             dataset: stockitem
             name_column: tax_rate
@@ -117,6 +130,7 @@ hierarchies:
 
           - unique_name: Typical Weight Per Unit
             label: Typical Weight Per Unit
+            description: "Typical weight of one unit of the item."
             folder: Stock
             dataset: stockitem
             name_column: typical_weight_per_unit
@@ -126,6 +140,7 @@ hierarchies:
 
           - unique_name: Unit Price
             label: Unit Price
+            description: "Selling price of a single unit in dollars. Contrast Recommended Retail Price."
             folder: Stock
             dataset: stockitem
             name_column: unit_price
@@ -138,6 +153,7 @@ level_attributes:
   - unique_name: Stock Item
     label: Stock Item
     is_unique_key: true
+    description: "Stock item / product name (e.g. USB rocket launcher). Role-played across sale, order, purchase, movement, and stock holding facts."
     dataset: stockitem
     name_column: stock_item
     key_columns:
